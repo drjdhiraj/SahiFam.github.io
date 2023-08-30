@@ -1,0 +1,344 @@
+.container {
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+    .contact-form button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .contact-form button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+
+
+.container{
+  margin-left: 100px;
+}
+
+
+.info_box div{
+  margin-left: 0px;
+
+}
+
+.contact-form div {
+  padding: 10px;
+
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.textcontent img{
+  display: block;
+  width:100%;
+
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ensure the container spans the full width */
+  max-width: 100%; /* Ensure the container doesn't exceed the image's width */
+}
+
+.overlay-text {
+  overflow: hidden;
+  position: absolute;
+  top: 85%; /* Position the text vertically centered */
+  left: 20%;
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  padding: 20px;
+  text-align: center;
+  color: rgb(36, 62, 9); /* Set the text color */
+}
+
+.overlay-text h1 {
+  margin: 0; /* Remove any default margins */
+}
+
+.image-container img {
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.about img {
+  max-height: 200px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.pic1 {
+  height: auto;
+  width:75%;
+  padding: 10%;
+  max-height:max-content
+}
+
+.pic1 img{
+  padding: auto;
+  max-height: 500px;
+}
+
+footer {
+    background-color: rgb(7, 52, 26);
+    padding-left: 10%;
+    
+}
+
+
+footer.py-5 {
+    background-color: #333; 
+    color: white; 
+}
+
+.nav-item{
+    color: white;
+}
+
+
+.whitebg {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+footer.py-5 li {
+    color: white;
+}
+/* 
+
+
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    background-color: NONE;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+  } */
+  
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(17, 17, 17, 0.8);
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 0.3;
+  }
+  
+  #hero .carousel-item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .carousel-content {
+    text-align: center;
+  }
+  
+  #hero h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #hero h2 span {
+    color: #0bff1f;
+  }
+  
+  #hero p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+  }
+  
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  
+  #hero .carousel-inner .carousel-item,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+  }
+  
+  #hero .carousel-inner .active,
+  #hero .carousel-inner .carousel-item-next.carousel-item-start,
+  #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #hero .carousel-inner .carousel-item-next,
+  #hero .carousel-inner .carousel-item-prev,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #hero .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: .6;
+    transition: 0.3s;
+  }
+  
+  #hero .carousel-indicators li.active {
+    opacity: 1;
+    background: #ea2b32;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px 12px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    text-transform: uppercase;
+    border: 2px solid #1ada37;
+    background: #224502;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #109ecd;
+    border-color: #00e6fb;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #hero p {
+      width: 60%;
+    }
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
