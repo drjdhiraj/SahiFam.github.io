@@ -62,13 +62,13 @@
 
 .image-container {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   width: 100%; /* Ensure the container spans the full width */
   max-width: 100%; /* Ensure the container doesn't exceed the image's width */
 }
 
 .overlay-text {
-  overflow: hidden;
+  overflow: auto;
   position: absolute;
   top: 85%; /* Position the text vertically centered */
   left: 20%;
@@ -83,7 +83,7 @@
 }
 
 .image-container img {
-  overflow: hidden;
+  overflow: auto;
   display: block;
   max-width: 100%;
   height: auto;
